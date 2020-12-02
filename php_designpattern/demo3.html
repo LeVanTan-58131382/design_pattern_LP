@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Design Pattern</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1,
+        h3,
+        h4,
+        h5 {
+            text-align: center;
+        }
+        p {
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body style="overflow-x: hidden;">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Design Pattern</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Parts</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item active" href="#">Part 1 - Việt Anh</a>
+                        <a class="dropdown-item" href="01-AbstractFactory/main.php">Part 2 - Thanh Hai</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Creational Pattern</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="1-factory/main.php">1. Factory Pattern</a>
+                        <a class="dropdown-item" href="3-singleton/main.php">2. Singleton Pattern</a>
+                        <a class="dropdown-item" href="5-prototype/main.php">3. Prototype Pattern</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Structural Pattern</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="7-bridge/main.php">1. Bridge Pattern</a>
+                        <a class="dropdown-item" href="28-composite-entity/main.php">2. Composite Pattern</a>
+                        <a class="dropdown-item" href="11-facade/main.php">3. Facade Pattern</a>
+                        <a class="dropdown-item" href="13-proxy/main.php">4. Proxy Pattern</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Behavioral Pattern</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="15-command/main.php">1. Command Pattern</a>
+                        <a class="dropdown-item" href="17-iterator/main.php">2. Iterator Pattern</a>
+                        <a class="dropdown-item" href="19-memento/main.php">3. Memento Pattern</a>
+                        <a class="dropdown-item" href="21-state/main.php">4. State Pattern</a>
+                        <a class="dropdown-item" href="23-stratery/main.php">5. Strategy Pattern</a>
+                        <a class="dropdown-item" href="25-visitor/main.php">6. Visitor Pattern</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Others Pattern</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="27-delegate/main.php">1. Business Delegate Pattern</a>
+                        <a class="dropdown-item" href="29-data-access-object/main.php">2. Data Access Object
+                            Pattern</a>
+                        <a class="dropdown-item" href="31-intercepting-filter/main.php">3. Intercepting Filter
+                            Pattern</a>
+                        <a class="dropdown-item" href="33-transfer-object/main.php">4. Transfer Object
+                            Pattern</a>
+                        <a class="dropdown-item" href="34-repository/main.php">5. Repository Pattern</a>
+
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Diagram</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item " href="DesignPattern.html">1. Full Diagram Design Pattern</a>
+                        <a class="dropdown-item" href="demo1.html">2. Diagram mô hình CPE</a>
+                        <a class="dropdown-item" href="demo2.html">3. Diagram mô hình CFSRPE</a>
+                        <a class="dropdown-item active" href="demo3.html">4. Diagram mô hình CRCMD</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fuild">
+        <div class="row">
+            <div class="col-md-10">
+                <div style="
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;" class="mxgraph" style="max-width:100%;border:1px solid transparent;"
+                    data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;page&quot;:0,&quot;toolbar&quot;:&quot;pages zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2020-08-21T03:38:36.676Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36\&quot; etag=\&quot;zwV7H548Uh0YA3GTiwgG\&quot; version=\&quot;13.6.4\&quot; type=\&quot;google\&quot; pages=\&quot;3\&quot;&gt;&lt;diagram id=\&quot;ZYcaw3XczekOsFcImxdU\&quot; name=\&quot;Demo3a\&quot;&gt;7VvbctowEP0aP6bj++URCKTJNCU0zZDw5rEVEBUWFeKWr6+MZcCSk1AHm9I4kwe0ltdo95yz8tooRmuyuiL+dHSLQ4AUXQ1XinGp6Lpm6roS/6vhOrE4npkYhgSGfNLOcA9fADeq3DqHIZhlJlKMEYXTrDHAUQQCmrH5hOBldtozRtmrTv0hkAz3gY9kax+GdMSttmXuDnwFcDhKL63ZXnJk4qez+VJmIz/Eyz2T0VaMFsGYJp8mqxZAcfTSwNwunF63RyYL+Pizd9EZLG9e7IvEWedvTtmugYCIFnY99pzx9/GDE2iXN44Dfj/177+mrhc+mvOA8bXSdRpBgudRCGInqmI0lyNIwf3UD+KjS4YZZhvRCWIjjX18hgi1MMJkc67R2fwx+4ErSL8OIBSs9hLIV3QF8ARQsmZT+FHd5Mnh8DQMPl7ukm2lWBzt5dlRudHnABtufe9iyD7wMOaH1Pz2gAbLJ60TggiOI+Q9/+hf2FIEQcggyYeY0BEe4shH7Z21mY3xbs43jKc8smNA6Zrzy59TnI37jPqENmK+MEOEI5DaOjD+9hu3IArTGQHyZzMYJEY+JXFD8C+wl0B18/fXCYxX/Gb6CEA+hYssSfNSwU+9w5Bdd5t2082m3XaFbM7wnASAn7VPivccaYIjFsMhoJKjDTK26ykOlvRyNVpKRMtWANIaZhVEi+jILQ8tuWqtS2rdwhFLAkKAnJdum4Ju256s21qeboupO5psOzURK5dtyzySbJtOtbLt1WCpXLWl0lxUtaXNQsmqbUiq/QNM8QxSzGXrbFXbsk6t2vX2qQIi2kLWRbE9lIi29o6jklXbqMFSfok3hMpsusXAYoglXnRUMljcGiyVl3hpG1e0xEsby5JLvCmV+BZhlZtA/7wLvKmdusBbNQ0rvy2T2hpFb8ukRkvZ3TStRkvlou0W7b2KjryKRduSRRtBwK91tpLt6qeWbLMmYeWSLXGnqGRLbC6ZhLZEQoaF5bm3sz3TOjEJ9ZqEpZNQ6me4VsFKKHZYREfHI+GiRyf9Fr362R+g7lMHw+8dkHbR9kh4R8CMxfjceGjrQiBP3qCsd6Tl81BqFelGwWIoNq9ERyXzUH4bpx1RSM/sKYFun7CJkBvXkxRDsIL0MT79i8VHT3tHLlcpD+PBmg9CfzbaXLMAi/mMHYXVI1I4YdD7JSQhyPvzjicJhwKjYawMdTBtQ/Nh9XJzfa3fDbs5he9WaRlK04yRGX9qtKJRvHylrSnNptJgU9QwHVjRkA0Rq9XqG0/0GGuoKM/7SeF522cpN/kIDqNYn5NKbDRjDsLARw1+YALDcAPWPAXIAvgZR5RDVXfKJL+TJb9hy+Q3rRzy60cg/8C3VLdLrn+twkvc7a2D1mPe5qbjBx9/9vpKYA6N6cEBdKrcwuQGUK5K94AsIIvLWQTQrrL85AZQlwJ4R/DqH8WfuIWu9M2s3PD9z/0koQ4Wz96Rn/E7RR8BiPfEkqPjbaFzwfI/Py/6V8Ai5Vis3UX7HpKjksEiNx9l9OSlTZLho2Vm/2cLb2jsR2+YvVf2GB+9YXb00hpXuQl0PmkCpbgXbf9LSLBL63jkJtD9rAlUhV2WXZSB4ov05T2/yU2g91kTaLyyTf4oA+2jvRTJhrsfJybTd7/xNNp/AA==&lt;/diagram&gt;&lt;diagram id=\&quot;xndZxEERM4aFpekulAVc\&quot; name=\&quot;Page-2\&quot;&gt;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&lt;/diagram&gt;&lt;diagram id=\&quot;YjiQyEVK1wX-sN0gPSBR\&quot; name=\&quot;Page-3\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+
+            </div>
+            <div class="col-md-2">
+                <div style="text-align: center;">
+                    <h4>Giải thích</h4>
+                </div>
+                <hr>
+                <div style="margin-bottom: 0px;margin-right: 2%;">
+                    <p><strong>Client :</strong> Người dùng.</p>
+                    <p><strong>Browser :</strong> Trình duyệt Web.</p>
+                    <p><strong>Controller : </strong>Là nơi xử lý, điều hướng web. </p>
+                    <p><strong>Proxy : </strong>Là một Design Pattern, trong trường hợp này nó sẽ là đại diện cho user password, bấm <a href="13-proxy/main.php">vào đây</a> để hiểu rõ hơn về Proxy. </p>
+                    <p><strong>Factory : </strong>Là nơi khởi tạo Service và Repository để sử dụng.</p>
+                    <p><strong>Service : </strong>Là nơi xử lý nghiệp vụ. </p>
+                    <p><strong>Criteria : </strong>Bộ lọc điều kiện lấy dữ liệu.</p>
+                    <p><strong>Repository : </strong>Là một dạng Design Pattern nhằm tạo ra lớp trung gian xử lý logic giữa tầng Business Logic và Data Access bấm <a href="34-repository/main.php">vào đây</a> để hiểu rõ hơn về Repository. </p>
+                    <p><strong>Entity : </strong>Là nơi các thực thể ánh xạ với Database. </p>
+                    <p><strong>Validator : </strong>Là nơi bắt lỗi các giá trị. </p>
+                    <p><strong>Presenter : </strong>Là nơi chuyển đổi Object qua Array. </p>
+                </div>
+                <hr>
+                <div style="text-align: center;">
+                    <h4>Chú thích</h4>
+                </div>
+                <hr>
+                <div style="margin-bottom: 0px;">
+                    <p><strong>Trang 1 :</strong> Relation Component</p>
+                    <p><strong>Trang 2 :</strong> Sequence Diagram</p>
+                </div>
+                <hr>
+                <button type="button" style="width: 98%;" class="btn btn-primary" data-toggle="modal"
+                    data-target="#modelId">Cách chuyển trang</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" style="width: auto;" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cách chuyển trang</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <img style="width: 100%;" src="img/guildChangePage.JPG" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://app.diagrams.net/js/viewer-static.min.js"></script>
+</body>
+
+</html>

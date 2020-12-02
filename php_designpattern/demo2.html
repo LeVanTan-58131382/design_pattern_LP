@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Design Pattern</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1,
+        h3,
+        h4,
+        h5 {
+            text-align: center;
+        }
+        p {
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body style="overflow-x: hidden;">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Design Pattern</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Parts</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item active" href="#">Part 1 - Việt Anh</a>
+                        <a class="dropdown-item" href="01-AbstractFactory/main.php">Part 2 - Thanh Hai</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Creational Pattern</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="1-factory/main.php">1. Factory Pattern</a>
+                        <a class="dropdown-item" href="3-singleton/main.php">2. Singleton Pattern</a>
+                        <a class="dropdown-item" href="5-prototype/main.php">3. Prototype Pattern</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Structural Pattern</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="7-bridge/main.php">1. Bridge Pattern</a>
+                        <a class="dropdown-item" href="28-composite-entity/main.php">2. Composite Pattern</a>
+                        <a class="dropdown-item" href="11-facade/main.php">3. Facade Pattern</a>
+                        <a class="dropdown-item" href="13-proxy/main.php">4. Proxy Pattern</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Behavioral Pattern</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="15-command/main.php">1. Command Pattern</a>
+                        <a class="dropdown-item" href="17-iterator/main.php">2. Iterator Pattern</a>
+                        <a class="dropdown-item" href="19-memento/main.php">3. Memento Pattern</a>
+                        <a class="dropdown-item" href="21-state/main.php">4. State Pattern</a>
+                        <a class="dropdown-item" href="23-stratery/main.php">5. Strategy Pattern</a>
+                        <a class="dropdown-item" href="25-visitor/main.php">6. Visitor Pattern</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Others Pattern</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="27-delegate/main.php">1. Business Delegate Pattern</a>
+                        <a class="dropdown-item" href="29-data-access-object/main.php">2. Data Access Object
+                            Pattern</a>
+                        <a class="dropdown-item" href="31-intercepting-filter/main.php">3. Intercepting Filter
+                            Pattern</a>
+                        <a class="dropdown-item" href="33-transfer-object/main.php">4. Transfer Object
+                            Pattern</a>
+                        <a class="dropdown-item" href="34-repository/main.php">5. Repository Pattern</a>
+
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Diagram</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item " href="DesignPattern.html">1. Full Diagram Design Pattern</a>
+                        <a class="dropdown-item" href="demo1.html">2. Diagram mô hình CPE</a>
+                        <a class="dropdown-item active" href="demo2.html">3. Diagram mô hình CFSRPE</a>
+                        <a class="dropdown-item " href="demo3.html">4. Diagram mô hình CRCMD</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fuild">
+        <div class="row">
+            <div class="col-md-10">
+                <div style="
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;" class="mxgraph" style="max-width:100%;border:1px solid transparent;"
+                   data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;page&quot;:0,&quot;toolbar&quot;:&quot;pages zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2020-08-20T01:15:39.552Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36\&quot; etag=\&quot;6YIZmH8ziyGP3fM6jm2-\&quot; version=\&quot;13.6.3\&quot; type=\&quot;google\&quot; pages=\&quot;2\&quot;&gt;&lt;diagram id=\&quot;lwh9dz1jVPJek0cpu1jI\&quot; name=\&quot;Demo2a\&quot;&gt;7Vpdc5s6EP01PGYGEDL4MSZ2Oneae9OkmUz7RkA26pURI+Sv/PoKI2yQSOzQQOpxPHmARSzROXtW2gUD+PP1NQvS+IZGiBi2Ga0NcGXYtuXYtpH/mdGmsLgOLAwzhiM5aG+4x89IGk1pXeAIZbWBnFLCcVo3hjRJUMhrtoAxuqoPm1JSf2oazJBmuA8DolsfccRjaR1AZ3/hC8KzuHy0NRgWV+ZBOVpOJYuDiK4qJjA2gM8o5cXRfO0jkqNXAnMFJr9A9nM5/eaOyPAnRC5ZXRTOJm+5ZTcHhhLe2jXcrJbfn2LwMF7c+dc3V5mfQXmLuQzIQgIm58o3JYKMLpII5U5MA4xWMeboPg3C/OpKxIywxXxOxJklDqeYEJ8Syrb3gsn2J+xHzkDOdIkYR+sKgXJG14jOEWcbMaS8asoZrPbkDoC0xRVeB640BjKgZjtfe8zEgYTtDRBaGmIoEiEoTynjMZ3RJCDjvXVUx3Q/5iulqUTyF+J8I/UULDit45zxgPHLXB/CkNAElbYJzv/7rVuUROWIkARZhsPCKIcUbhj9H1UIM7e/NxOWz/hVuhgiAcfLuiibqJC33lIsnrujGXiSPZmFoKewmdEFC5G8qyqCQ46A4khgOENcc7SNjN182geLrenNJxjJZ52M6oCj0gE1FVpWgwrhO4jwAXmPm2dr+s3mq2nK0n8p2VxYH6LCIxT2l+nIrBO3W6bfrCPFkTXoV0dQ09EdSmmGOZXBdDJasoFCia2vaJ1pqRFbV8N2EoSnB+wuJCWwwO0R2OYkBT6T1BFJynYP5JZjk5TqSMt2HSepoSakccIxPzEdqQmqacvdb4IqF/sKsPeILbEA7KSQhdYHZqhmZPXy77OY6bqYcdrmN81Rz/ntY9azM4sWR0kSWsV6bLRojtQauutocbSsPcr7e4idVtZWi1/n47M2/NRh7zrUkm1bHWrp//102FiF6C1fnyaCBEIalCj84TRDh1UYZGnRvp/idR5V3ckPwvqmCejy8xrUp2a796vqNDxvGV3/4Sa/K/QcqJREfXYbGuHTO6J6EDZlkdZgHUwUFSjgK0j8aZWrbN6AB9rlEwBfqCJ6yif6sn4eBGq4D712BKqR4JherwTqvdTzINBxVOG47QiEphoJ/SpwcKYEqrhrwjl6S6ZGgirljgnUO+7nQSCwld1I69e6SqcXdPdat5FA70wJdMAB3I9WoNqq76450Uig3qo/EwK9ejVlq0vX0QQCpSxz+iWwrFnOjkFtG9pWgtq3Ad1J8O7r09M/j8/O+GE9vP0P3g5/ENbQl7gxfGCMnBy3/OjST2JxLF9GX8hXPhevvPgXRTFXm1bVbpPsWlU7iNIUEDxL8jgRoYCEfZSX2DgMyKW8MMdRRF7qi9RL/SlNuOyi2W6XL7yBuh0qTqtx6DYEom2+HHMvlPbidP/dYxEA+89Hwfg3&lt;/diagram&gt;&lt;diagram id=\&quot;9v-WS30ZDhgan9PrsUbL\&quot; name=\&quot;Page-2\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+
+            </div>
+            <div class="col-md-2">
+                <div style="text-align: center;">
+                    <h4>Giải thích</h4>
+                </div>
+                <hr>
+                <div style="margin-bottom: 0px;margin-right: 2%;">
+                    <p><strong>Client :</strong> Người dùng.</p>
+                    <p><strong>Browser :</strong> Trình duyệt Web.</p>
+                    <p><strong>Controller : </strong>Là nơi xử lý, điều hướng web. </p>
+                    <p><strong>Proxy : </strong>Là một Design Pattern, trong trường hợp này nó sẽ là đại diện cho user password, bấm <a href="13-proxy/main.php">vào đây</a> để hiểu rõ hơn về Proxy. </p>
+                    <p><strong>Factory : </strong>Là nơi khởi tạo Service và Repository để sử dụng.</p>
+                    <p><strong>Service : </strong>Là nơi xử lý nghiệp vụ. </p>
+                    <p><strong>Repository : </strong>Là một dạng Design Pattern nhằm tạo ra lớp trung gian xử lý logic giữa tầng Business Logic và Data Access bấm <a href="34-repository/main.php">vào đây</a> để hiểu rõ hơn về Repository. </p>
+                    <p><strong>Entity : </strong>Là nơi các thực thể ánh xạ với Database. </p>
+                </div>
+                <hr>
+                <div style="text-align: center;">
+                    <h4>Chú thích</h4>
+                </div>
+                <hr>
+                <div style="margin-bottom: 0px;">
+                    <p><strong>Trang 1:</strong> Relation Component</p>
+                    <p><strong>Trang 2:</strong> Sequence Diagram</p>
+                </div>
+                <hr>
+                <button type="button" style="width: 98%;" class="btn btn-primary" data-toggle="modal"
+                    data-target="#modelId">Cách chuyển trang</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" style="width: auto;" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cách chuyển trang</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <img style="width: 100%;" src="img/guildChangePage.JPG" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://app.diagrams.net/js/viewer-static.min.js"></script>
+</body>
+
+</html>

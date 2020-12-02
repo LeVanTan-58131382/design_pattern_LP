@@ -1,0 +1,229 @@
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=5,IE=9"><![endif]-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Diagram</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        h1,
+        h3,
+        h4
+         {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div style="margin-left: 50px;">
+<h1>
+    Ứng dụng Design Pattern Decorator vào dự án laravel
+</h1>
+<div class="geDiagramContainer"
+     style="max-width: 100%; border: 1px solid transparent; position: relative; touch-action: none; cursor: pointer; overflow: hidden; margin-top: 30px; width: 855px; height: 75px;"
+     data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;<mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2020-08-20T02:11:05.986Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36\&quot; etag=\&quot;ZzOb2OFQNyXTfYxqRm7o\&quot; version=\&quot;13.6.3\&quot; type=\&quot;google\&quot;><diagram id=\&quot;dwEZHvJLWwE7u-hznWoM\&quot; name=\&quot;Page-2\&quot;>7VjbbqMwEP0aHrviGtLHlvSyUlutGqmXp8qBCXjXwZFxCvTr1wSbS7xqVZRkEylRHjwHzxifc8wgDCdYFDcMLZN7GgExbDMqDGdi2Lbl2rZR/c2orBH/3K2BmOFITmqBKf4ACZoSXeEIst5ETinheNkHQ5qmEPIehhijeX/anJL+qksUgwZMQ0R09BlHPKnRsWe2+C3gOFErW6a8skBqsgSyBEU070DOleEEjFJejxZFAKQiT/ECt2/T/NG8v7F/3qG7Vz5H5M9ZXez6OynNFhikfHDpp4c4O/ttfaxmz/TpIhiXjw8zmWK+I7KSfAU05YwSAkzumpeKSkZXaQRVOdNwLvMEc5guUVhdzYV5BJbwBRGRJYZzTEhACWXrXOd6/RO4XBAYh2JDoS+2ZzWcC7MCXQBnpchTVUZyL9KnttIxb1W3lCmTjuLKCUgaLW5Kt2SKgeTzG9xaGrfydI2IWPpyJggexbyh5FiIHrmHRrStEf0IS5phTmXxo+HWNQ+NW0fjVmMU0uiielCLKCQoy3DYJ1EQwsoXSfg6eK2CH54KJ0X34qRUUYH5i6ohxp0sEbVJVaBy6puDSOsJw2Tp0O59wjoDgjh+76/5LynkCr8oFnfTqO5ZG6rbrthmr0hGVywEmdd9yG+U0g6nXoojFgPXSq3d0Wx9uGHcLRhGCm/2hPc/V75xmdV3mf+VzY7SMprOjjnMMJr3Ngvt2C7eyS57sIvWV4baxfb/r11Gp3a0c7NoGg9vR5rv9t6OfM0wE8TRDGWgGeeg3wzH40N7MxyfjuLOj6Lvbe0oagba+1E8P7X6PVhG03loq9e8t7VWL8L2q1k9vf326Fz9BQ==</diagram></mxfile>&quot;}">
+    <svg style="left: 0px; top: 0px; width: 100%; height: 100%; display: block; min-width: 855px; min-height: 75px; background-color: transparent; background-image: none;">
+        <defs>
+            <filter id="dropShadow">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="1.7" result="blur"></feGaussianBlur>
+                <feOffset in="blur" dx="3" dy="3" result="offsetBlur"></feOffset>
+                <feFlood flood-color="#3D4574" flood-opacity="0.4" result="offsetColor"></feFlood>
+                <feComposite in="offsetColor" in2="offsetBlur" operator="in" result="offsetBlur"></feComposite>
+                <feBlend in="SourceGraphic" in2="offsetBlur"></feBlend>
+            </filter>
+        </defs>
+        <g transformOrigin="0 0" transform="scale(1,1)translate(-152,-192)">
+            <g></g>
+            <g>
+                <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                    <rect x="160" y="200" width="110" height="50" fill="#ffffff" stroke="#000000"
+                          pointer-events="all"></rect>
+                </g>
+                <g style="">
+                    <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                       height="100%">
+                            <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 108px; height: 1px; padding-top: 225px; margin-left: 161px;">
+                                <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                                    <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                        Controller
+                                    </div>
+                                </div>
+                            </div>
+                        </foreignObject>
+                    </g>
+                </g>
+                <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                    <rect x="640" y="200" width="110" height="50" fill="#ffffff" stroke="#000000"
+                          pointer-events="all"></rect>
+                </g>
+                <g style="">
+                    <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                       height="100%">
+                            <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 108px; height: 1px; padding-top: 225px; margin-left: 641px;">
+                                <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                                    <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                        Model<br></div>
+                                </div>
+                            </div>
+                        </foreignObject>
+                    </g>
+                </g>
+                <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                    <rect x="400" y="200" width="110" height="50" fill="#ffffff" stroke="#000000"
+                          pointer-events="all"></rect>
+                </g>
+                <g style="">
+                    <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                       height="100%">
+                            <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 108px; height: 1px; padding-top: 225px; margin-left: 401px;">
+                                <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                                    <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                        Repository
+                                    </div>
+                                </div>
+                            </div>
+                        </foreignObject>
+                    </g>
+                </g>
+                <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                    <path d="M 510 224.5 L 633.63 224.5" fill="none" stroke="white" stroke-miterlimit="10"
+                          pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                    <path d="M 510 224.5 L 633.63 224.5" fill="none" stroke="#000000" stroke-miterlimit="10"
+                          pointer-events="stroke"></path>
+                    <path d="M 638.88 224.5 L 631.88 228 L 633.63 224.5 L 631.88 221 Z" fill="#000000" stroke="#000000"
+                          stroke-miterlimit="10" pointer-events="all"></path>
+                </g>
+                <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                    <path d="M 640 230 L 516.37 230" fill="none" stroke="white" stroke-miterlimit="10"
+                          pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                    <path d="M 640 230 L 516.37 230" fill="none" stroke="#000000" stroke-miterlimit="10"
+                          pointer-events="stroke"></path>
+                    <path d="M 511.12 230 L 518.12 226.5 L 516.37 230 L 518.12 233.5 Z" fill="#000000" stroke="#000000"
+                          stroke-miterlimit="10" pointer-events="all"></path>
+                </g>
+                <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                    <path d="M 400 230 L 276.37 230" fill="none" stroke="white" stroke-miterlimit="10"
+                          pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                    <path d="M 400 230 L 276.37 230" fill="none" stroke="#000000" stroke-miterlimit="10"
+                          pointer-events="stroke"></path>
+                    <path d="M 271.12 230 L 278.12 226.5 L 276.37 230 L 278.12 233.5 Z" fill="#000000" stroke="#000000"
+                          stroke-miterlimit="10" pointer-events="all"></path>
+                </g>
+                <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                    <path d="M 270 224.5 L 393.63 224.5" fill="none" stroke="white" stroke-miterlimit="10"
+                          pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                    <path d="M 270 224.5 L 393.63 224.5" fill="none" stroke="#000000" stroke-miterlimit="10"
+                          pointer-events="stroke"></path>
+                    <path d="M 398.88 224.5 L 391.88 228 L 393.63 224.5 L 391.88 221 Z" fill="#000000" stroke="#000000"
+                          stroke-miterlimit="10" pointer-events="all"></path>
+                </g>
+                <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                    <rect x="880" y="200" width="110" height="50" fill="#ffffff" stroke="#000000"
+                          pointer-events="all"></rect>
+                </g>
+                <g style="">
+                    <g>
+                        <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%"
+                                       height="100%">
+                            <div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 108px; height: 1px; padding-top: 225px; margin-left: 881px;">
+                                <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                                    <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                        Database
+                                    </div>
+                                </div>
+                            </div>
+                        </foreignObject>
+                    </g>
+                </g>
+                <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                    <path d="M 750 224.5 L 873.63 224.5" fill="none" stroke="white" stroke-miterlimit="10"
+                          pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                    <path d="M 750 224.5 L 873.63 224.5" fill="none" stroke="#000000" stroke-miterlimit="10"
+                          pointer-events="stroke"></path>
+                    <path d="M 878.88 224.5 L 871.88 228 L 873.63 224.5 L 871.88 221 Z" fill="#000000" stroke="#000000"
+                          stroke-miterlimit="10" pointer-events="all"></path>
+                </g>
+                <g transform="translate(0.5,0.5)" style="visibility: visible;">
+                    <path d="M 880 230 L 756.37 230" fill="none" stroke="white" stroke-miterlimit="10"
+                          pointer-events="stroke" visibility="hidden" stroke-width="9"></path>
+                    <path d="M 880 230 L 756.37 230" fill="none" stroke="#000000" stroke-miterlimit="10"
+                          pointer-events="stroke"></path>
+                    <path d="M 751.12 230 L 758.12 226.5 L 756.37 230 L 758.12 233.5 Z" fill="#000000" stroke="#000000"
+                          stroke-miterlimit="10" pointer-events="all"></path>
+                </g>
+            </g>
+            <g></g>
+            <g></g>
+        </g>
+    </svg>
+    <div class="resize-sensor"
+         style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;">
+        <div class="resize-sensor-expand"
+             style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+            <div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 100000px; height: 100000px;"></div>
+        </div>
+        <div class="resize-sensor-shrink"
+             style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+            <div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <p>khi xây dựng bất kỳ ứng dụng Laravel chúng ta có thể tách rời Controller tránh thao tác trực tiếp với
+            ORM Eloquent (hoặc bất kỳ ORM) bằng cách tạo một Interface và sau đó viết một Repository triển khai Interface đó.
+        </p>
+        <p>Repository là phần trung gian, nó là cầu nối giữa Model và Controller.</p>
+        <p>Repository là nơi lưu trữ logic truy vấn dữ liệu. Các lệnh truy vẫn dữ liệu vốn được viết trực tiếp ở controller sẽ được đưa vào Repository. Khi đó, Controller sẽ dùng Repository để tương tác với dữ liệu thay vì sử dụng trực tiếp. Việc truy cập dữ liệu được giấu kín trong Repository.
+        </p>
+
+
+        <h5>Đặt Vấn đề</h5>
+        <p>
+            Truy vấn cơ sở dữ liệu thường là một nút thắt cổ chai lớn trong ứng dụng web. Có quá nhiều truy vấn và một trong số đó giống nhau
+        </p>
+        <h5>Giải pháp</h5>
+        <p>
+            Chúng ta phải giảm số lần thực hiện truy vấn bằng cách triển khai một số hình thức lưu vào bộ nhớ đệm cho các truy vấn.
+        </p>
+
+    <h5>
+        Triển khai giải pháp bộ nhớ đệm
+    </h5>
+
+    <p>Cách 1: Triển khai trực tiếp trong Class Repository</p>
+
+        <p>
+            Trường hợp này có thể áp dụng cho dự án nhỏ. Tuy nhiên, điều đó có nghĩa là kho lưu trữ của bạn hiện phụ thuộc vào cả ORM và bộ nhớ cache bạn đã chọn.
+        </p>
+        <p>
+            -Vi phạm Single Responsibility principle.
+        </p>
+        <p>
+            Mỗi lớp chỉ nên chịu trách nhiệm về một nhiệm vụ cụ thể nào đó mà thôi.
+        </p>
+        <p>
+            -Vi phạm Open-closed principle.
+        </p>
+        <p>
+            Chúng ta nên hạn chế việc chỉnh sửa bên trong một Class hoặc Module có sẵn, thay vào đó hãy xem xét mở rộng chúng.
+            (Software modules should be closed for modifications but open for extensions)
+        </p>
+    <p>Cách 2: Sử dụng mẫu Decorator</p>
+        <p>
+            Bằng cách này, mẫu Decorator giúp triển khai bộ nhớ đệm  riêng biệt với các tương tác  database trong Repository.
+            Tái sử dụng và cung cấp thêm chức năng cho các lớp đã có.
+        </p>
+        <div class="geDiagramContainer" style="max-width: 100%; border: 1px solid transparent; position: relative; touch-action: none; cursor: pointer; overflow: hidden; margin-top: 30px; width: 655px; height: 735px;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;<mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2020-08-20T03:20:24.273Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36\&quot; etag=\&quot;n4u8oGpJ63nuZqv9TQfA\&quot; version=\&quot;13.6.3\&quot; type=\&quot;google\&quot;><diagram id=\&quot;aWmW1wIjcrTZoHnCKM7S\&quot; name=\&quot;Page-1\&quot;>7Vnbcts4DP0azXQfnNHFkp1Hy07a7rS72bh76SMrQRJbSdRStC3365eUSN2dyo2bTWcyk4kJEAABEDikac1aJ8VrirLoPfEh1kzdLzRro5mmoVtL/iE4x4pjL/WKEVLsS6GGscVfQWlK7g77kHcEGSExw1mX6ZE0BY91eIhScuiKBSTurpqhEAaMrYfiIfdv7LOo4i5tveG/ARxGamVDlzMJUsKSkUfIJ4cWy7rRrDUlhFWjpFhDLJKn8lLp3Z6YrR2jkLIpCn+9K4z7331649/5+8Nv2y9ff3VmhlOZ2aN4JyPWTCfmBt1M+MyOMhHOvzvhqJsgGuJUs1Z8Vs8K/p8zy3AFf8ZIVs3NW3MMCjZDMQ6lnsc9BtrY5KNQfP6ZA72HjOSYEXp8K4QC5IFy6BNVgorDg836vKglJRYPcOqv4vjVL9XaYo0xg0rUPb71X2nmHPsdBbOTDHMPlGFeJKsqqE0ZtitD3MQQCKOESwVxueUB5lthuQFJmSxxw5T0LUpwLJrjDcR7EFZFECyJhVDpWn+b5c4LH6BoseS2vwaSAKNHLiJnLUeWoOxBQ9GHpqJrXtSq5mvJQ7KJwtp0U2d8IEvtjLKre6JJKfi87yRJKItISFIU3zRcl5Jd6oMwK+qqkXlHRPbLZH0Gxo4yw2jHSDeVUGD2j1C/siX1URoT403RJo6KSHm8LSVBflT2BNGolZTSO7ltOdlRDx5qSYmYjHcUsAm9KzL3YBlQiBHD+y6iXXxPld/PEEq+H0GsRJ5oD6PHC/ScgB6jBz2WOYQeUx+BHmP+w7DHGNQpTrIYEh5l/rPA0iPg5Xoiasgd1K8W+tKqdCYDibR2RzB3rzY1n3eLwbR7e1xBntRqX2WUISVIgiAHNiiF2vtHoNj1s0WxDXiEIj56BJxRbq2DZmfdt14AbtAetjkB4MbuVj8Q4KyfBcWe/nIlpKZdrqbC5HmYuKIUHVsCmQC2/DRkOna3vOy53quPyuJFMVAl6dlg4Bp5EVwWCMud+z4sFLqe8KhWLv17j1IUvlwPz0NPZ7y8O+hpjqFn/+pwOfScD4t/bWorF9c1wUnXHWT+wt/ZlwuOiZ1v7SO5MXR7mBvzAqlZze7/2H1Y3X+mwWJbfNlcB6vFzPxfz5VTp4rIS+tcWS4kdQcU87h5jwwOG92oT5jS3NXSrs+fE0cO8F4Vz4mcTEkKFee2bJ5Gur/kpHNqNNXqqfNbx5SC6qd/A3jI7VbvNCC3cEehESUCoNJPeVbBdvmn19/IGqz9li4FtqOpxPUrnjYBrCMrDOwsNqcxu+H0IfhpwxGrq5XHI+h1Zh6hDMpiZaJYDxFmsM1QWXQHirJuk+US+ud8POkEybkpnIYfyiaeORd6LOhddpzFxHdKY3k+5HGyeXuvbk7NLxjWzX8=</diagram></mxfile>&quot;}"><svg style="left: 0px; top: 0px; width: 100%; height: 100%; display: block; min-width: 655px; min-height: 735px; background-color: transparent; background-image: none;"><defs><filter id="dropShadow"><feGaussianBlur in="SourceAlpha" stdDeviation="1.7" result="blur"></feGaussianBlur><feOffset in="blur" dx="3" dy="3" result="offsetBlur"></feOffset><feFlood flood-color="#3D4574" flood-opacity="0.4" result="offsetColor"></feFlood><feComposite in="offsetColor" in2="offsetBlur" operator="in" result="offsetBlur"></feComposite><feBlend in="SourceGraphic" in2="offsetBlur"></feBlend></filter></defs><g transformOrigin="0 0" transform="scale(1,1)translate(-142,-132)"><g></g><g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="360" y="160" width="160" height="90" fill="#ffffff" stroke="#000000" pointer-events="all"></rect></g><g style=""><g><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%"><div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 162px; height: 90px; padding-top: 160px; margin-left: 360px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; width: 162px; height: 90px; overflow: hidden; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; width: 100%; height: 100%; white-space: nowrap; "><p style="margin: 0px ; margin-top: 4px ; text-align: center">UserRepositoryInterface<br></p><hr>+ findAll(): User<br>+ findById($id): User</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 260 320 L 260 285 L 440 285 L 440 256.37" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 260 320 L 260 285 L 440 285 L 440 256.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 440 251.12 L 443.5 258.12 L 440 256.37 L 436.5 258.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="160" y="320" width="200" height="140" fill="#ffffff" stroke="#000000" pointer-events="all"></rect></g><g style=""><g><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%"><div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 202px; height: 140px; padding-top: 320px; margin-left: 160px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; width: 202px; height: 140px; overflow: hidden; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; width: 100%; height: 100%; white-space: nowrap; "><p style="margin: 0px ; margin-top: 4px ; text-align: center">UserRepository<br></p><hr>#model : User<br><hr>+ findAll(): User<br>+ findById($id): User</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 650 320 L 650 285 L 440 285 L 440 256.37" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 650 320 L 650 285 L 440 285 L 440 256.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 440 251.12 L 443.5 258.12 L 440 256.37 L 436.5 258.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 285px; margin-left: 446px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; background-color: #ffffff; white-space: nowrap; ">implements</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="520" y="320" width="260" height="140" fill="#ffffff" stroke="#000000" pointer-events="all"></rect></g><g style=""><g><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%"><div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 262px; height: 140px; padding-top: 320px; margin-left: 520px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; width: 262px; height: 140px; overflow: hidden; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; width: 100%; height: 100%; white-space: nowrap; "><p style="margin: 0px ; margin-top: 4px ; text-align: center">UserRepositoryDecorator<br></p><hr>#repo : UserRepositoryInterface<br><hr>+ findAll(): User<br>+ findById($id): User</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 670 540 L 650 540 L 650 466.37" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 670 540 L 650 540 L 650 466.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 650 461.12 L 653.5 468.12 L 650 466.37 L 646.5 468.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="560" y="540" width="220" height="150" fill="#ffffff" stroke="#000000" pointer-events="all"></rect></g><g style=""><g><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%"><div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 222px; height: 150px; padding-top: 540px; margin-left: 560px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; width: 222px; height: 150px; overflow: hidden; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; width: 100%; height: 100%; white-space: nowrap; "><p style="margin: 0px ; margin-top: 4px ; text-align: center">UserCacheRepositoryDecorator<br></p><hr># repo : UserRepositoryInterface<br># cache : CacheManager<br><hr>+ findAll(): User<br>+ findById($id): User</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="387.5" y="140" width="105" height="20" fill="#ffffff" stroke="#000000" pointer-events="all"></rect></g><g style=""><g><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 150px; margin-left: 440px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: nowrap; ">«interface»</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 290 757 L 435 757 L 435 668.3 L 562.42 668.25" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 290 757 L 435 757 L 435 668.3 L 562.42 668.25" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 150 670 L 296 670 L 310 684 L 310 850 L 150 850 L 150 670 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"></path><path d="M 296 670 L 296 684 L 310 684" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"></path></g><g style=""><g><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%"><div style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 158px; height: 1px; padding-top: 671px; margin-left: 152px;"><div style="box-sizing: border-box; font-size: 0; text-align: left; "><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">findAll(){<br>&nbsp;// implement cache<br>&nbsp;return repo.get();&nbsp;<br>}<br><br>findById($id){<br>&nbsp;// implement cache<br>&nbsp;return repo.find($id)<br>}</div></div></div></foreignObject></g></g></g><g></g><g></g></g></svg><div class="resize-sensor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 100000px; height: 100000px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div></div>
+            </div>
+</div>
+</div>
+<script type="text/javascript" src="https://app.diagrams.net/js/viewer-static.min.js"></script>
+</body>
+</html>
